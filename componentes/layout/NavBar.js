@@ -1,15 +1,24 @@
 import React from 'react'
+import { useRouter } from "next/router";
 
-function NavBar (){
-    return (
-        <div className='layout-NavBar'>
+function NavBar() {
+const router = useRouter();
 
-        <p>Cursos</p>
-        <p>Horarios</p>
-        <p>Onde estamos</p>
-        <p>contatos</p>
-        </div>
-    )
+const handleClick = (url) => {
+router.push(url);
+
+};
+
+return (
+<div className="layout-navbar">
+
+<p onClick={() => handleClick("/sobreOCurso")}>Sobre o Curso</p>
+<p onClick={() => handleClick("/horarios")}>Horários</p>
+<p onClick={() => handleClick("/ondeEstamos")}>Onde Estamos</p>
+
+</div>
+ );
+
 }
 
-export default NavBar
+export default NavBar;

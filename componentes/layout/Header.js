@@ -1,14 +1,14 @@
-import React from 'react'
-import NavBar from './NavBar';
-function Header (){
-    return (
-        <div className='layout-header'>
+import React from 'react' 
+import NavBar from './NavBar' 
+import Logo from './Logo' 
+function Header() { 
+return ( 
+<div className='layout-header'> 
 
-logo
-        <NavBar />
-        
-        </div>
-    )
-}
+<Logo /> 
+<NavBar /> 
 
-export default Header
+</div> 
+)
+ } 
+ export default Header

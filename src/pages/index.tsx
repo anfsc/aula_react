@@ -1,26 +1,9 @@
+import React from 'react'
 
-import { Inter } from 'next/font/google'
-
-import Layout from '../../componentes/layout'
-
-
-
-
-
-
-const inter = Inter({ subsets: ['latin'] })
-
-
-
-
-export default function Home() {
-
-return (
-
-<>
-<Layout/>
-</>
-
- )
-
+function index() {
+  return (
+    <div>index</div>
+  )
 }
+
+export default index
