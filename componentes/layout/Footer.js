@@ -1,10 +1,11 @@
 import React from 'react'
 
-function Footer (){
+function Footer (props){
     return (
 <div className='layout-footer'>
-        Footer
-        
+
+{props.name}
+
         </div>
     )
 }

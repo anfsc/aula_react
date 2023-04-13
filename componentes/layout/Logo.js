@@ -1,8 +1,11 @@
 import React from 'react'
 
-function logo() {
+function logo(props) {
   return (
-    <div className='logo'>Logo</div>
+    <div className='logo'>
+
+      {props.titulo}
+    </div>
     )
 }
 
