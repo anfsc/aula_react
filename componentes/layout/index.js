@@ -40,7 +40,7 @@ const closedMixin = (theme) => ({
   overflowX: "hidden",
   width: `calc(${theme.spacing(7)} + 1px)`,
   [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(8)} + 1px)`
+    width: `calc(${theme.spacing(6)} + 1px)`
   }
 });
 
@@ -122,7 +122,7 @@ function Layout({ children }) {
     <Box sx={{position: 'relative'}}>
       <AppBar  open={open} sx={{zIndex: 1}}>
           <Header />
-          <Box className='layout' component="main" sx={{ flexGrow: 1, p: 3 }}>
+          <Box className='layout' component="main" sx={{ flexGrow: 1, pl: 20}}>
         {children}
     </Box>
       </AppBar>
