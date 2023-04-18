@@ -15,6 +15,7 @@ return (
 <p onClick={() => handleClick("/sobreOCurso")}>Sobre o Curso</p>
 <p onClick={() => handleClick("/horarios")}>Horários</p>
 <p onClick={() => handleClick("/ondeEstamos")}>Onde Estamos</p>
+<p onClick={() => handleClick("/testemunhos")}>Testemunhos</p>
 
 </div>
  );

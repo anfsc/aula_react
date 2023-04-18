@@ -12,8 +12,29 @@ const Item = styled(Paper)(({ theme }) => ({
         
         useEffect(() => { async function buscarAlunos() { 
             const response = await fetch( "https://jsonplaceholder.typicode.com/users" ); 
-            const data = await response.json(); setAlunos(data); } buscarAlunos(); }, []); 
+
+            //Metódos HTTP psrs retornar dados - CRUD
+            //GET - recuperar dados
+            //POST - criar dados
+            //PUT - atualizar dados
+            //DELETE - apagar dados
+
+            //REST API
+            //Microservice
+
+
+
+
             
+            const data = await response.json(); 
+            setAlunos(data); } buscarAlunos(); }, []); 
+            
+
+
+
+
+
+
             return ( 
             <Box sx={{ flexGrow: 1, textAlign: 'center' }}>
                  <h2>Alunos Matriculados</h2> 
