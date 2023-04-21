@@ -1,18 +1,25 @@
-import React, { useEffect, useState } from "react"; 
+import React, { useContext, useEffect, useState } from "react"; 
 import { experimentalStyled as styled } from '@mui/material/styles'; 
 import Box from '@mui/material/Box'; import Paper from '@mui/material/Paper'; 
 import Grid from '@mui/material/Grid'; 
+import { AlunosContext } from "../context/AlunosContext"
 
 const Item = styled(Paper)(({ theme }) => ({ 
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff", ...theme.typography.body2, padding: theme.spacing(2), textAlign: "center", color: theme.palette.text.secondary, })); function index() { const [alunos, setAlunos] = useState([]); 
+    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff", ...theme.typography.body2, padding: theme.spacing(2), textAlign: "center", color: theme.palette.text.secondary, })); 
+    
+    function index() {
+         const [alunos, setAlunos] = useState([]); 
+        const alunos2 = useContext (AlunosContext);
         //JSON representation [{nome: 'João', email: 'dycjh@example.com'}, 
         // { nome: 'Maria', email: 'dycjh@example.com' }] 
         // useEffect(() => {funcao}, [controle]) 
         // function nomedaFuncao(){corpo da funcao} 
         
-        useEffect(() => { async function buscarAlunos() { 
-            const response = await fetch( "https://jsonplaceholder.typicode.com/users" ); 
-
+        useEffect(() => {
+            
+            console.log(alunos2)
+            setAlunos(alunos2)
+        }, [alunos2]);
             //Metódos HTTP psrs retornar dados - CRUD
             //GET - recuperar dados
             //POST - criar dados
@@ -21,19 +28,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
             //REST API
             //Microservice
-
-
-
-
-            
-            const data = await response.json(); 
-            setAlunos(data); } buscarAlunos(); }, []); 
-            
-
-
-
-
-
 
             return ( 
             <Box sx={{ flexGrow: 1, textAlign: 'center' }}>

@@ -20,15 +20,10 @@ function testemunhos() {
     return(
         data.map((testemunhos, index)=> {
             return(
-
                 <>
                 <p style={{color:"black"}}>Aluno:{testemunhos.aluno}</p> <br />
                 <p style={{color:"black"}}> Title:{testemunhos.title}</p> <br />
-                <p style={{color:"black"}}>Body:{testemunhos.description} </p><br />
-
-
-
-                
+                <p style={{color:"black"}}>Body:{testemunhos.description}</p> <br />                
                 </>
             )
         })
