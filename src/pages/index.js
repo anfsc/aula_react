@@ -34,7 +34,7 @@ const Item = styled(Paper)(({ theme }) => ({
                  <h2>Alunos Matriculados</h2> 
                  <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} > 
                  
-                 {alunos.map((aluno) => ( 
+                 {alunos?.map((aluno) => ( 
                  
                  <Grid item xs={12} sm={12} md={6} key={index}> 
                  

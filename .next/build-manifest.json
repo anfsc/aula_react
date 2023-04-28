@@ -1,34 +1,60 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/0NYGIrgA6docVEY-ftFbH/_buildManifest.js",
+    "static/0NYGIrgA6docVEY-ftFbH/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/chunks/886-b44c07fa3e6f5845.js",
+      "static/chunks/pages/index-86682dc4bb1be904.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/css/f893bf698b381bdd.css",
+      "static/chunks/pages/_app-58f9d52d5c3190e1.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/chunks/pages/_error-54de1933a164a1ff.js"
+    ],
+    "/horarios": [
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/chunks/pages/horarios-73ddd8ce1f205bb7.js"
+    ],
+    "/ondeEstamos": [
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/chunks/pages/ondeEstamos-36b625b624e0e4fa.js"
+    ],
+    "/sobreOCurso": [
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/chunks/pages/sobreOCurso-f06db87b983fd373.js"
+    ],
+    "/testemunhos": [
+      "static/chunks/webpack-0b5d8249fb15f5f3.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-0ecb9ccfcb6c9b24.js",
+      "static/chunks/886-b44c07fa3e6f5845.js",
+      "static/chunks/219-f538e1993311c8d0.js",
+      "static/chunks/pages/testemunhos-6d459dfb1bc886b0.js"
     ]
   },
   "ampFirstPages": []

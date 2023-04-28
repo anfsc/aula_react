@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState } from 'react'; 
+import React, { createContext, useEffect, useState } from 'react'; 
+
 
 const AlunosContext = createContext();
 
@@ -6,20 +7,28 @@ const AlunosDispatchContext = createContext();
 
 function AlunosProvider({ children }) { 
 
-    const [alunos, setAlunos] = useState([
+    const [alunos, setAlunos] = useState();
+
+        useEffect(() => { 
+            function  fetchTestemunho(){
+                fetch("/api/testemunhos")
+        .then(response => response.json())
+        .then(json => setAlunos(json))
+            }
     
-        {name: "Teste", email:"teste2@gmail.com", phone:"93839393939"},
-        {name: "Teste", email:"teste2@gmail.com", phone:"93839393939"},
-        {name: "Teste", email:"teste2@gmail.com", phone:"93839393939"},
-        {name: "Teste", email:"teste2@gmail.com", phone:"93839393939"},
-        {name: "Teste", email:"teste2@gmail.com", phone:"93839393939"}
+            fetchTestemunho();
     
-    ]);
+        }, [])
+
+const dispatch = (newTestemunho) => {
+    setAlunos((prevTestemunhos) => [...prevTestemunhos, newTestemunho])
+}
+
 
     return (
 
         <AlunosContext.Provider value={alunos}>
-            <AlunosDispatchContext.Provider value={[setAlunos]}>
+            <AlunosDispatchContext.Provider value={dispatch}>
                 {children}
 
                 </AlunosDispatchContext.Provider>
